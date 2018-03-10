@@ -32,28 +32,28 @@
                                     <constraint firstAttribute="height" constant="70" id="dkX-Vg-Kf6"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="o1O-M4-Kib">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="o1O-M4-Kib" userLabel="Buttons pad">
                                 <rect key="frame" x="0.0" y="90" width="375" height="417"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="h98-X2-6Z8">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="139"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="137"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rc4-wt-0Gx">
-                                                <rect key="frame" x="0.0" y="0.0" width="123" height="139"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="123" height="137"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="tttButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tbH-Ch-byn"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlu-bn-ke1">
-                                                <rect key="frame" x="126" y="0.0" width="123" height="139"/>
+                                                <rect key="frame" x="126" y="0.0" width="123" height="137"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="tttButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U4j-SN-6Mp"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnQ-Os-HbQ">
-                                                <rect key="frame" x="252" y="0.0" width="123" height="139"/>
+                                                <rect key="frame" x="252" y="0.0" width="123" height="137"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="tttButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xu5-qb-Lp6"/>
@@ -62,24 +62,24 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="dqC-Wr-tIr">
-                                        <rect key="frame" x="0.0" y="139" width="375" height="139"/>
+                                        <rect key="frame" x="0.0" y="140" width="375" height="137"/>
                                         <subviews>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7b8-JT-CeW">
-                                                <rect key="frame" x="0.0" y="0.0" width="123" height="139"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="123" height="137"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="tttButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n9D-dk-Vqp"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pU-Ny-Xac">
-                                                <rect key="frame" x="126" y="0.0" width="123" height="139"/>
+                                                <rect key="frame" x="126" y="0.0" width="123" height="137"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="tttButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GuL-rV-jBa"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6o-Ji-oEg">
-                                                <rect key="frame" x="252" y="0.0" width="123" height="139"/>
+                                                <rect key="frame" x="252" y="0.0" width="123" height="137"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="tttButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jtf-BR-kyY"/>
@@ -88,24 +88,24 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Out-vO-2sy">
-                                        <rect key="frame" x="0.0" y="278" width="375" height="139"/>
+                                        <rect key="frame" x="0.0" y="280" width="375" height="137"/>
                                         <subviews>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAp-5C-d0c">
-                                                <rect key="frame" x="0.0" y="0.0" width="123" height="139"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="123" height="137"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="tttButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ufy-lW-zMF"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKD-kP-35f">
-                                                <rect key="frame" x="126" y="0.0" width="123" height="139"/>
+                                                <rect key="frame" x="126" y="0.0" width="123" height="137"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="tttButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iz2-VI-uLd"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRu-FO-KX3">
-                                                <rect key="frame" x="252" y="0.0" width="123" height="139"/>
+                                                <rect key="frame" x="252" y="0.0" width="123" height="137"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="tttButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wHN-hy-K5L"/>
@@ -167,15 +167,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="a1button" destination="rc4-wt-0Gx" id="nhy-d6-kc2"/>
-                        <outlet property="a2button" destination="dlu-bn-ke1" id="VZA-7P-Hzt"/>
-                        <outlet property="a3button" destination="fnQ-Os-HbQ" id="XlT-2I-g0G"/>
-                        <outlet property="b1button" destination="7b8-JT-CeW" id="LvD-9o-bmk"/>
-                        <outlet property="b2button" destination="8pU-Ny-Xac" id="fy2-Cq-Y0q"/>
-                        <outlet property="b3button" destination="V6o-Ji-oEg" id="b6l-Fv-OKD"/>
-                        <outlet property="c1button" destination="qAp-5C-d0c" id="PVp-3j-uDz"/>
-                        <outlet property="c2button" destination="eKD-kP-35f" id="q2R-8g-uZY"/>
-                        <outlet property="c3button" destination="lRu-FO-KX3" id="Wuh-oS-haG"/>
+                        <outlet property="winnerLabel" destination="kRu-ZZ-tCE" id="Twe-T5-jvx"/>
+                        <outletCollection property="buttons" destination="rc4-wt-0Gx" collectionClass="NSMutableArray" id="7YU-IW-4m1"/>
+                        <outletCollection property="buttons" destination="dlu-bn-ke1" collectionClass="NSMutableArray" id="mmv-wN-Skf"/>
+                        <outletCollection property="buttons" destination="fnQ-Os-HbQ" collectionClass="NSMutableArray" id="w2c-do-ioD"/>
+                        <outletCollection property="buttons" destination="7b8-JT-CeW" collectionClass="NSMutableArray" id="pvh-hX-SH3"/>
+                        <outletCollection property="buttons" destination="8pU-Ny-Xac" collectionClass="NSMutableArray" id="R9F-w7-tbd"/>
+                        <outletCollection property="buttons" destination="V6o-Ji-oEg" collectionClass="NSMutableArray" id="NGi-94-MIs"/>
+                        <outletCollection property="buttons" destination="qAp-5C-d0c" collectionClass="NSMutableArray" id="IJg-F2-3s0"/>
+                        <outletCollection property="buttons" destination="eKD-kP-35f" collectionClass="NSMutableArray" id="MX9-pA-Cma"/>
+                        <outletCollection property="buttons" destination="lRu-FO-KX3" collectionClass="NSMutableArray" id="DTg-y8-5jf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
