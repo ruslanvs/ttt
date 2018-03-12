@@ -14,16 +14,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var winnerLabel: UILabel!
     
     var c = UIColor.red
-//    var score = [String: Int]()
-    var board = [Int: String]()
+    var board = [Int: UIColor]()
     let combinations = [
         [1,2,3], [4,5,6], [7,8,9],
         [1,4,7], [2,5,8], [3,6,9],
         [1,5,9], [3,5,7]
     ]
+    var gameOn = true
 
     func color() -> UIColor {
-//        var color: UIColor = UIColor()
         if c == UIColor.red {
             c = UIColor.blue
         } else {
@@ -33,20 +32,23 @@ class ViewController: UIViewController {
     }
 
     @IBAction func tttButtonPressed(_ sender: UIButton ){
-        if sender.backgroundColor != UIColor.red && sender.backgroundColor != UIColor.blue {
+
+        if gameOn == true && sender.backgroundColor != UIColor.red && sender.backgroundColor != UIColor.blue {
             sender.backgroundColor = color()
             if sender.backgroundColor == UIColor.red {
-                board[sender.tag] = "red"
+                board[sender.tag] = UIColor.red
             } else {
-                board[sender.tag] = "blue"
+                board[sender.tag] = UIColor.blue
             }
-//            if let c = board[sender.tag] {
-//                print( board, c )
-//            }
+
             for combination in combinations {
-                print( combination )
-                if board[combination[0]] == board[combination[1]] && board[combination[1]] == board[combination[2]] {
-                    winnerLabel.text = board[combination[0]]
+                if board[combination[0]] == board[combination[1]] && board[combination[1]] == board[combination[2]] && board[combination[0]] != nil {
+                    gameOn = false
+                    if board[combination[0]] == UIColor.red {
+                        winnerLabel.text = "red"
+                    } else {
+                        winnerLabel.text = "blue"
+                    }
                 }
             }
         }
@@ -54,14 +56,16 @@ class ViewController: UIViewController {
     
     @IBAction func reset(_ sender: UIButton ){
         for button in buttons {
-            button.backgroundColor = UIColor.clear
+            button.backgroundColor = nil
+            board[button.tag] = nil
+            winnerLabel.text = nil
+            gameOn = true
         }
-        
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        winnerLabel.text = ""
+        winnerLabel.text = nil
         // Do any additional setup after loading the view, typically from a nib.
     }
 
